@@ -161,6 +161,7 @@ describe('GlobalConfig', () => {
 			logWriter: {
 				keepLogCount: 3,
 				logBaseName: 'n8nEventLog',
+				logFullPath: '',
 				maxFileSizeInKB: 10240,
 				maxMessagesPerParse: 10_000,
 				maxTotalMessagesPerFile: 500_000,
@@ -369,6 +370,9 @@ describe('GlobalConfig', () => {
 			enabled: false,
 			ttl: 10,
 			interval: 3,
+		},
+		evaluation: {
+			parallelExecutionEnabled: false,
 		},
 		generic: {
 			timezone: 'America/New_York',
